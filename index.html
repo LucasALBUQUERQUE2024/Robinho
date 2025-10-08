@@ -18,25 +18,20 @@
             --bg-light: #FDFDFD; /* Fundo muito claro */
             --bg-dark: #333333; /* Fundo escuro para footer */
             --border-light: #EEEEEE; /* Borda clara */
-
-            /* Degradê principal */
             --gradient-red: linear-gradient(135deg, var(--primary-red) 0%, var(--secondary-red) 100%);
         }
-
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
             scroll-behavior: smooth;
         }
-
         body {
             font-family: 'Roboto', sans-serif;
             line-height: 1.6;
             color: var(--text-dark);
             background-color: var(--bg-light);
         }
-
         /* --- Header e Navegação --- */
         .header {
             background-color: var(--text-light);
@@ -89,7 +84,6 @@
         .nav-list a:hover::after {
             width: 100%;
         }
-
         /* --- Hero Section (Destaque) --- */
         .hero-section {
             background: var(--gradient-red);
@@ -100,7 +94,7 @@
             justify-content: center;
             text-align: center;
             padding: 0 2rem;
-            padding-top: 6rem; /* Ajuste para o header fixo */
+            padding-top: 6rem;
         }
         .hero-content {
             max-width: 800px;
@@ -132,7 +126,6 @@
             color: var(--text-light);
             box-shadow: 0 8px 20px rgba(0,0,0,0.3);
         }
-
         /* --- Seções Gerais --- */
         .section {
             padding: 6rem 2rem;
@@ -156,7 +149,6 @@
             margin: 15px auto 0;
             border-radius: 2px;
         }
-
         /* --- Seção de Serviços --- */
         .servicos-grid {
             display: grid;
@@ -182,7 +174,7 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             margin-bottom: 1.5rem;
-            display: inline-block; /* Garante que o gradiente seja aplicado corretamente */
+            display: inline-block;
         }
         .servico-card h3 {
             font-size: 1.4rem;
@@ -194,7 +186,6 @@
             font-size: 0.95rem;
             color: #616161;
         }
-
         /* --- Seção de Portfólio --- */
         .portifolio-grid {
             display: grid;
@@ -209,8 +200,8 @@
         }
         .portifolio-item img {
             width: 100%;
-            height: 300px; /* Altura fixa para uniformidade */
-            object-fit: cover; /* Recorta a imagem para cobrir a área */
+            height: 300px;
+            object-fit: cover;
             display: block;
             transition: transform 0.4s ease;
         }
@@ -231,7 +222,7 @@
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
-            height: 100%; /* Ocupa toda a altura para o efeito */
+            height: 100%;
         }
         .portifolio-item:hover .portifolio-text {
             transform: translateY(0);
@@ -246,7 +237,6 @@
             font-size: 0.9rem;
             color: rgba(255,255,255,0.8);
         }
-
         /* --- Seção de Contato --- */
         .contact-section {
             text-align: center;
@@ -306,7 +296,6 @@
             color: var(--text-light);
             box-shadow: 0 8px 20px rgba(0,0,0,0.3);
         }
-
         /* --- Footer --- */
         .footer {
             background-color: var(--bg-dark);
@@ -327,7 +316,6 @@
         .footer-social a:hover {
             color: var(--tertiary-red);
         }
-
         /* --- Responsividade --- */
         @media (max-width: 768px) {
             .nav {
@@ -353,7 +341,6 @@
                 font-size: 1rem;
             }
         }
-
         @media (max-width: 480px) {
             .hero-content h1 {
                 font-size: 2.2rem;
